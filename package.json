@@ -1,0 +1,11 @@
+{
+  "name": "users-microservice",
+  "version": "1.0.0",
+  "description": "Microservice for user CRUD operations",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bryan Thomas",
+  "license": "ISC"
+}
