@@ -1,0 +1,53 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "username": "mojombo",
+      "first_name": "Jojo",
+      "last_name": "Alphonso",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1?v=4"
+    },
+    {
+      "id": 2,
+      "username": "defunkt",
+      "first_name": "Roger",
+      "last_name": "Pokitas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2?v=4"
+    },
+    {
+      "id": 3,
+      "username": "pjhyett",
+      "first_name": "Paul",
+      "last_name": "Jackson",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3?v=4"
+    },
+    {
+      "id": 4,
+      "username": "wycats",
+      "first_name": "Wesly",
+      "last_name": "Kostenson",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4?v=4"
+    },
+    {
+      "id": 5,
+      "username": "ezmobius",
+      "first_name": "Esmail",
+      "last_name": "Braxton",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5?v=4"
+    }
+  ],
+  "user-role": [
+    {
+      "id": 1,
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "role": "developer"
+    },
+    {
+      "id": 3,
+      "role": "superadmin"
+    }
+  ]
+}
