@@ -21,3 +21,7 @@ json-server --watch db.json
 
 json-server runs on port 3000 by default. Check out the [documentation](https://npmjs.com/package/json-server) 
 here for moredetailed information.
+
+### Importing MySQL Database Dump
+
+To make dev environment setup easier, I've included the database dump our CRUD server will be using. The script is located in the model folder.
