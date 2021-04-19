@@ -1,6 +1,6 @@
 # Users Microservice
 
-This project serves as a CRUD server for an Angular application
+This project serves as a microservice for CRUD operations on 'User' entities 
 
 ## Installation 
 
