@@ -39,6 +39,23 @@ app.get('/api/users', (req, res) => {
   });
 });
 
+// Endpoint to check if username is unique
+app.get('/api/user/:username', (req, res) => {
+  
+  let sql1 = 'SELECT user_id FROM user WHERE username = ?'
+  connection.query(sql1, [req.params.username], (error, results, fields) => {
+    if (error) { 
+      console.log(error); 
+      return res.json(error);
+    }
+    if (results.length == 0) {
+      res.json('ok');
+    } else {
+      res.json('ER_DUP_ENTRY');
+    }
+  });
+});
+
 
 // Endpoint to create user
 app.post('/api/user', async (req, res) => {
