@@ -56,6 +56,24 @@ app.get('/api/user/:username', (req, res) => {
   });
 });
 
+// Endpoint to retrieve single user by user id
+app.get('/api/user/:id', (req, res) => {
+  
+  let sql1 = 'SELECT * FROM user WHERE user_id = ?'
+  connection.query(sql1, [req.params.id], (error, results, fields) => {
+    if (error) { 
+      console.log(error); 
+      return res.json(error);
+    }
+    if (results.length == 0) {
+      res.json('User not found');
+    } else {
+      res.json(results);
+    }
+  });
+  
+});
+
 
 // Endpoint to create user
 app.post('/api/user', async (req, res) => {
