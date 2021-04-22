@@ -40,7 +40,7 @@ app.get('/api/users', (req, res) => {
 });
 
 // Endpoint to check if username is unique
-app.get('/api/user/:username', (req, res) => {
+app.get('/api/check/user/:username', (req, res) => {
   
   let sql1 = 'SELECT user_id FROM user WHERE username = ?'
   connection.query(sql1, [req.params.username], (error, results, fields) => {
